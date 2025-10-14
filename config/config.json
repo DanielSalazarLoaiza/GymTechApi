@@ -1,16 +1,16 @@
 {
   "development": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "gymtech_api",
-    "host": "127.0.0.1",
+    "username": "julian",
+    "password": "ecEhqx5YFvlXOUB7mm7jIzavIPZ8JpS8",
+    "database": "gymtech_mdzh",
+    "host": "dpg-d3mpfiidbo4c73etupfg-a",
     "dialect": "postgres"
   },
   "test": {
-    "username": "postgres",
-    "password": "postgres",
-    "database": "gymtech_api",
-    "host": "dpg-d35gaal6ubrc73ct7ong-a",
+    "username": "julian",
+    "password": "ecEhqx5YFvlXOUB7mm7jIzavIPZ8JpS8",
+    "database": "gymtech_mdzh",
+    "host": "dpg-d3mpfiidbo4c73etupfg-a",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
