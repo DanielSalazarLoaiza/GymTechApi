@@ -8,14 +8,20 @@ const { Op } = require("sequelize");
 module.exports = {
     authenticate: async function (req, res) {
         try {
+            
+            const { email, password } = req.body || {};
+            if (!email || !password) {
+                return res.status(400).json({ message: "Correo y contraseña son obligatorios" });
+            }
+            
             let data = await user.login(req.body.email, req.body.password);
             if (data.user) {
                 let token = jwt.sign({ user: data.user }, process.env.JWT_SECRET, {
                     expiresIn: 60 * 60 * 24,
                 });
-                return res.status(200).json({ 
-                    token, 
-                    user: { id:data.user.id, name:data.user.name, id_role:data.user.id_role, rol:data.user.rol.name } 
+                return res.status(200).json({
+                    token,
+                    user: { id: data.user.id, name: data.user.name, id_role: data.user.id_role, rol: data.user.rol.name }
                 });
             }
             return res.status(data.status).json(data);
@@ -68,7 +74,7 @@ module.exports = {
                 html: `
                     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px;">
                         <h2 style="color: #008550;">GymTech SENA</h2>
-                        <p>Hola <strong>${user.name}</strong>,</p>
+                        <p>Hola <strong>${usr.name}</strong>,</p>
 
                         <p>Recibimos una solicitud para restablecer tu contraseña. Si no realizaste esta solicitud, puedes ignorar este mensaje.</p>
 

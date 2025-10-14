@@ -25,7 +25,9 @@ module.exports = {
           observations: null,
           id_role: 1,
           id_group: null,
-          id_trainingcenter: null
+          id_trainingcenter: null,
+          createdAt: new Date(),
+          updatedAt: new Date()
         },
         {
           name: "entrenador",
@@ -46,7 +48,9 @@ module.exports = {
           observations: null,
           id_role: 2,
           id_group: null,
-          id_trainingcenter: null
+          id_trainingcenter: null,
+          createdAt: new Date(),
+          updatedAt: new Date()
         },
         {
           name: "aprendiz",
@@ -67,7 +71,9 @@ module.exports = {
           observations: null,
           id_role: 3,
           id_group: null,
-          id_trainingcenter: null
+          id_trainingcenter: null,
+          createdAt: new Date(),
+          updatedAt: new Date()
         }
       ],
       {}

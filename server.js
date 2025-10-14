@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors'); 
 const app = express();
+const authMiddleware = require('./middlewares/authMiddleware');
 
 //configuraciones
 if (process.env.NODE_ENV !== 'production') {
@@ -26,9 +27,14 @@ app.get('/', (req, resp) => {
 })
 
 app.set('PORT', process.env.PORT || 4000);
+//rutas publicas
+app.use('/api/v1/auth', require('./api/v1/routes/auth.routes')); // Auth
+
+// a partir de aquí todo requiere token
+app.use(authMiddleware);
 
 //Routes
-app.use('/api/v1/auth', require('./api/v1/routes/auth.routes')); // Auth
+// a partir de aquí todo requiere token
 app.use('/api/v1/users', require('./api/v1/routes/users.routes')); // Usuarios
 app.use('/api/v1/role', require('./api/v1/routes/role.routes')); // Roles
 app.use('/api/v1/activities', require('./api/v1/routes/activity.routes')); // Actividades

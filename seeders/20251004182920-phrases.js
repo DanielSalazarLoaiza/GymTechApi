@@ -4,7 +4,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     await queryInterface.bulkInsert(
-      "phrases",
+      "Phrases",
       [
         {
           name: "El dolor es temporal, el orgullo es para siempre.",
@@ -2671,6 +2671,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    await queryInterface.bulkDelete('phrases', null, {});
+    await queryInterface.bulkDelete('Phrases', null, {});
   }
 };
