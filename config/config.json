@@ -1,16 +1,16 @@
 {
   "development": {
-    "username": "julian",
-    "password": "ecEhqx5YFvlXOUB7mm7jIzavIPZ8JpS8",
-    "database": "gymtech_mdzh",
-    "host": "dpg-d3mpfiidbo4c73etupfg-a",
+    "username": "administrador",
+    "password": "KiSbKmGq2q8g9nr37MMBEzFj6MlT7NUb",
+    "database": "gymtech_yp5h",
+    "host": "dpg-d3pupv0gjchc73au6sj0-a",
     "dialect": "postgres"
   },
   "test": {
-    "username": "julian",
-    "password": "ecEhqx5YFvlXOUB7mm7jIzavIPZ8JpS8",
-    "database": "gymtech_mdzh",
-    "host": "dpg-d3mpfiidbo4c73etupfg-a",
+    "username": "administrador",
+    "password": "KiSbKmGq2q8g9nr37MMBEzFj6MlT7NUb",
+    "database": "gymtech_yp5h",
+    "host": "dpg-d3pupv0gjchc73au6sj0-a",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
