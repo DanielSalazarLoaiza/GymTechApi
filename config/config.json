@@ -3,14 +3,14 @@
     "username": "administrador",
     "password": "KiSbKmGq2q8g9nr37MMBEzFj6MlT7NUb",
     "database": "gymtech_yp5h",
-    "host": "dpg-d3pupv0gjchc73au6sj0-a",
+    "host": "dpg-d3pupv0gjchc73au6sj0-a.oregon-postgres.render.com",
     "dialect": "postgres"
   },
   "test": {
     "username": "administrador",
     "password": "KiSbKmGq2q8g9nr37MMBEzFj6MlT7NUb",
     "database": "gymtech_yp5h",
-    "host": "dpg-d3pupv0gjchc73au6sj0-a",
+    "host": "dpg-d3pupv0gjchc73au6sj0-a.oregon-postgres.render.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
