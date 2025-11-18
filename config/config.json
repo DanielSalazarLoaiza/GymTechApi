@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "administrador",
-    "password": "KiSbKmGq2q8g9nr37MMBEzFj6MlT7NUb",
-    "database": "gymtech_yp5h",
-    "host": "dpg-d3pupv0gjchc73au6sj0-a.oregon-postgres.render.com",
+    "password": "ysw6R6EnRvZnlE8WTdqO2YE8qgnhR125",
+    "database": "gymtech_sena",
+    "host": "dpg-d4dulfqdbo4c73d4p3ug-a.oregon-postgres.render.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
@@ -14,9 +14,9 @@
   },
   "test": {
     "username": "administrador",
-    "password": "KiSbKmGq2q8g9nr37MMBEzFj6MlT7NUb",
-    "database": "gymtech_yp5h",
-    "host": "dpg-d3pupv0gjchc73au6sj0-a.oregon-postgres.render.com",
+    "password": "ysw6R6EnRvZnlE8WTdqO2YE8qgnhR125",
+    "database": "gymtech_sena",
+    "host": "dpg-d4dulfqdbo4c73d4p3ug-a.oregon-postgres.render.com",
     "dialect": "postgres",
     "dialectOptions": {
       "ssl": {
